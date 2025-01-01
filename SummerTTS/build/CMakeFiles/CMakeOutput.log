@@ -1,0 +1,376 @@
+The target system is: Linux -  - riscv64
+The host system is: Linux - 5.15.0-127-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc 
+Build flags: --sysroot=/home/openharmony/toolchain/riscv/sysroot;-nostdinc;-isystem;/home/openharmony/toolchain/riscv/sysroot/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/openharmony/SummerTTS/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++ 
+Build flags: --sysroot=/home/openharmony/toolchain/riscv/sysroot;-nostdinc;-isystem;/home/openharmony/toolchain/riscv/sysroot/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/openharmony/SummerTTS/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f35f8/fast && /usr/bin/make -f CMakeFiles/cmTC_f35f8.dir/build.make CMakeFiles/cmTC_f35f8.dir/build
+make[1]: Entering directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f35f8.dir/testCCompiler.c.o
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc --sysroot=/home/openharmony/toolchain/riscv/sysroot  -I/home/openharmony/toolchain/riscv/sysroot/usr/include -I/home/openharmony/toolchain/riscv/sysroot/include  --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include    -o CMakeFiles/cmTC_f35f8.dir/testCCompiler.c.o   -c /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f35f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f35f8.dir/link.txt --verbose=1
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc --sysroot=/home/openharmony/toolchain/riscv/sysroot --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include   --sysroot=/home/openharmony/toolchain/riscv/sysroot  CMakeFiles/cmTC_f35f8.dir/testCCompiler.c.o  -o cmTC_f35f8   -L/home/openharmony/toolchain/riscv/sysroot/usr/lib  -L/home/openharmony/toolchain/riscv/sysroot/lib 
+make[1]: Leaving directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b5944/fast && /usr/bin/make -f CMakeFiles/cmTC_b5944.dir/build.make CMakeFiles/cmTC_b5944.dir/build
+make[1]: Entering directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc --sysroot=/home/openharmony/toolchain/riscv/sysroot   --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include    -v -o CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc
+Target: riscv64-unknown-linux-musl
+Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow'
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_b5944.dir/'
+ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/cc1 -quiet -nostdinc -v -iprefix /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/ -isysroot /home/openharmony/toolchain/riscv/sysroot -isystem /home/openharmony/toolchain/riscv/sysroot/include /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b5944.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=rocket -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -march=rv64imafdc_zicsr_zifencei -version -o /tmp/cc6FdJlS.s
+GNU C17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/openharmony/toolchain/riscv/sysroot/include
+End of search list.
+GNU C17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 35055242c2fcad04a7d9136348b354c8
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_b5944.dir/'
+ /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o /tmp/cc6FdJlS.s
+GNU assembler version 2.40.0 (riscv64-unknown-linux-musl) using BFD version (GNU Binutils) 2.40.0.20230214
+COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_b5944
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5944.dir/link.txt --verbose=1
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc --sysroot=/home/openharmony/toolchain/riscv/sysroot --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include   --sysroot=/home/openharmony/toolchain/riscv/sysroot -v CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o  -o cmTC_b5944   -L/home/openharmony/toolchain/riscv/sysroot/usr/lib  -L/home/openharmony/toolchain/riscv/sysroot/lib 
+Using built-in specs.
+COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc
+COLLECT_LTO_WRAPPER=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper
+Target: riscv64-unknown-linux-musl
+Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow'
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 (GCC) 
+COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-v' '-o' 'cmTC_b5944' '-L/home/openharmony/toolchain/riscv/sysroot/usr/lib' '-L/home/openharmony/toolchain/riscv/sysroot/lib' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_b5944.'
+ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/collect2 -plugin /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/liblto_plugin.so -plugin-opt=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrLHFju.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/openharmony/toolchain/riscv/sysroot --eh-frame-hdr -melf64lriscv -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_b5944 /home/openharmony/toolchain/riscv/sysroot/lib/crt1.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crti.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtbegin.o -L/home/openharmony/toolchain/riscv/sysroot/usr/lib -L/home/openharmony/toolchain/riscv/sysroot/lib -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0 -L/home/openharmony/toolchain/riscv/bin/../lib/gcc -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib -L/home/openharmony/toolchain/riscv/sysroot/lib CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtend.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-v' '-o' 'cmTC_b5944' '-L/home/openharmony/toolchain/riscv/sysroot/usr/lib' '-L/home/openharmony/toolchain/riscv/sysroot/lib' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_b5944.'
+make[1]: Leaving directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/openharmony/toolchain/riscv/sysroot/include]
+  end of search list found
+  collapse include dir [/home/openharmony/toolchain/riscv/sysroot/include] ==> [/home/openharmony/toolchain/riscv/sysroot/include]
+  implicit include dirs: [/home/openharmony/toolchain/riscv/sysroot/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_b5944/fast && /usr/bin/make -f CMakeFiles/cmTC_b5944.dir/build.make CMakeFiles/cmTC_b5944.dir/build]
+  ignore line: [make[1]: Entering directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc --sysroot=/home/openharmony/toolchain/riscv/sysroot   --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include    -v -o CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_b5944.dir/']
+  ignore line: [ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/cc1 -quiet -nostdinc -v -iprefix /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/ -isysroot /home/openharmony/toolchain/riscv/sysroot -isystem /home/openharmony/toolchain/riscv/sysroot/include /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b5944.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=rocket -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -march=rv64imafdc_zicsr_zifencei -version -o /tmp/cc6FdJlS.s]
+  ignore line: [GNU C17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/openharmony/toolchain/riscv/sysroot/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 35055242c2fcad04a7d9136348b354c8]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_b5944.dir/']
+  ignore line: [ /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o /tmp/cc6FdJlS.s]
+  ignore line: [GNU assembler version 2.40.0 (riscv64-unknown-linux-musl) using BFD version (GNU Binutils) 2.40.0.20230214]
+  ignore line: [COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_b5944]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5944.dir/link.txt --verbose=1]
+  ignore line: [/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc --sysroot=/home/openharmony/toolchain/riscv/sysroot --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include   --sysroot=/home/openharmony/toolchain/riscv/sysroot -v CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o  -o cmTC_b5944   -L/home/openharmony/toolchain/riscv/sysroot/usr/lib  -L/home/openharmony/toolchain/riscv/sysroot/lib ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-v' '-o' 'cmTC_b5944' '-L/home/openharmony/toolchain/riscv/sysroot/usr/lib' '-L/home/openharmony/toolchain/riscv/sysroot/lib' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_b5944.']
+  link line: [ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/collect2 -plugin /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/liblto_plugin.so -plugin-opt=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrLHFju.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/openharmony/toolchain/riscv/sysroot --eh-frame-hdr -melf64lriscv -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_b5944 /home/openharmony/toolchain/riscv/sysroot/lib/crt1.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crti.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtbegin.o -L/home/openharmony/toolchain/riscv/sysroot/usr/lib -L/home/openharmony/toolchain/riscv/sysroot/lib -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0 -L/home/openharmony/toolchain/riscv/bin/../lib/gcc -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib -L/home/openharmony/toolchain/riscv/sysroot/lib CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtend.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtn.o]
+    arg [/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccrLHFju.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/home/openharmony/toolchain/riscv/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-melf64lriscv] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-musl-riscv64.so.1] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b5944] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/sysroot/lib/crt1.o] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crti.o] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtbegin.o] ==> ignore
+    arg [-L/home/openharmony/toolchain/riscv/sysroot/usr/lib] ==> dir [/home/openharmony/toolchain/riscv/sysroot/usr/lib]
+    arg [-L/home/openharmony/toolchain/riscv/sysroot/lib] ==> dir [/home/openharmony/toolchain/riscv/sysroot/lib]
+    arg [-L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0] ==> dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0]
+    arg [-L/home/openharmony/toolchain/riscv/bin/../lib/gcc] ==> dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc]
+    arg [-L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib]
+    arg [-L/home/openharmony/toolchain/riscv/sysroot/lib] ==> dir [/home/openharmony/toolchain/riscv/sysroot/lib]
+    arg [CMakeFiles/cmTC_b5944.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtend.o] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtn.o] ==> ignore
+  collapse library dir [/home/openharmony/toolchain/riscv/sysroot/usr/lib] ==> [/home/openharmony/toolchain/riscv/sysroot/usr/lib]
+  collapse library dir [/home/openharmony/toolchain/riscv/sysroot/lib] ==> [/home/openharmony/toolchain/riscv/sysroot/lib]
+  collapse library dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0] ==> [/home/openharmony/toolchain/riscv/lib/gcc/riscv64-unknown-linux-musl/12.2.0]
+  collapse library dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc] ==> [/home/openharmony/toolchain/riscv/lib/gcc]
+  collapse library dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> [/home/openharmony/toolchain/riscv/riscv64-unknown-linux-musl/lib]
+  collapse library dir [/home/openharmony/toolchain/riscv/sysroot/lib] ==> [/home/openharmony/toolchain/riscv/sysroot/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/home/openharmony/toolchain/riscv/sysroot/usr/lib;/home/openharmony/toolchain/riscv/sysroot/lib;/home/openharmony/toolchain/riscv/lib/gcc/riscv64-unknown-linux-musl/12.2.0;/home/openharmony/toolchain/riscv/lib/gcc;/home/openharmony/toolchain/riscv/riscv64-unknown-linux-musl/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86634/fast && /usr/bin/make -f CMakeFiles/cmTC_86634.dir/build.make CMakeFiles/cmTC_86634.dir/build
+make[1]: Entering directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_86634.dir/testCXXCompiler.cxx.o
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++ --sysroot=/home/openharmony/toolchain/riscv/sysroot   -I/home/openharmony/toolchain/riscv/sysroot/usr/include -I/home/openharmony/toolchain/riscv/sysroot/include  --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include    -o CMakeFiles/cmTC_86634.dir/testCXXCompiler.cxx.o -c /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_86634
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86634.dir/link.txt --verbose=1
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++ --sysroot=/home/openharmony/toolchain/riscv/sysroot  --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include   --sysroot=/home/openharmony/toolchain/riscv/sysroot  CMakeFiles/cmTC_86634.dir/testCXXCompiler.cxx.o  -o cmTC_86634   -L/home/openharmony/toolchain/riscv/sysroot/usr/lib  -L/home/openharmony/toolchain/riscv/sysroot/lib 
+make[1]: Leaving directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f10da/fast && /usr/bin/make -f CMakeFiles/cmTC_f10da.dir/build.make CMakeFiles/cmTC_f10da.dir/build
+make[1]: Entering directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++ --sysroot=/home/openharmony/toolchain/riscv/sysroot    --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include    -v -o CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++
+Target: riscv64-unknown-linux-musl
+Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow'
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_f10da.dir/'
+ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/cc1plus -quiet -nostdinc -v -iprefix /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/ -isysroot /home/openharmony/toolchain/riscv/sysroot -D_GNU_SOURCE -isystem /home/openharmony/toolchain/riscv/sysroot/include /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f10da.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=rocket -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -march=rv64imafdc_zicsr_zifencei -version -o /tmp/ccoxIYmV.s
+GNU C++17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/openharmony/toolchain/riscv/sysroot/include
+End of search list.
+GNU C++17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version none
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c0977378f48b9c93c4ef3690ab0f3c9c
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_f10da.dir/'
+ /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccoxIYmV.s
+GNU assembler version 2.40.0 (riscv64-unknown-linux-musl) using BFD version (GNU Binutils) 2.40.0.20230214
+COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_f10da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f10da.dir/link.txt --verbose=1
+/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++ --sysroot=/home/openharmony/toolchain/riscv/sysroot  --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include   --sysroot=/home/openharmony/toolchain/riscv/sysroot -v CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f10da   -L/home/openharmony/toolchain/riscv/sysroot/usr/lib  -L/home/openharmony/toolchain/riscv/sysroot/lib 
+Using built-in specs.
+COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++
+COLLECT_LTO_WRAPPER=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper
+Target: riscv64-unknown-linux-musl
+Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c,c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow'
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 12.2.0 (GCC) 
+COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/
+LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-v' '-o' 'cmTC_f10da' '-L/home/openharmony/toolchain/riscv/sysroot/usr/lib' '-L/home/openharmony/toolchain/riscv/sysroot/lib' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_f10da.'
+ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/collect2 -plugin /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/liblto_plugin.so -plugin-opt=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccouwNtk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/openharmony/toolchain/riscv/sysroot --eh-frame-hdr -melf64lriscv -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_f10da /home/openharmony/toolchain/riscv/sysroot/lib/crt1.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crti.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtbegin.o -L/home/openharmony/toolchain/riscv/sysroot/usr/lib -L/home/openharmony/toolchain/riscv/sysroot/lib -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0 -L/home/openharmony/toolchain/riscv/bin/../lib/gcc -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib -L/home/openharmony/toolchain/riscv/sysroot/lib CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtend.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-v' '-o' 'cmTC_f10da' '-L/home/openharmony/toolchain/riscv/sysroot/usr/lib' '-L/home/openharmony/toolchain/riscv/sysroot/lib' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_f10da.'
+make[1]: Leaving directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/openharmony/toolchain/riscv/sysroot/include]
+  end of search list found
+  collapse include dir [/home/openharmony/toolchain/riscv/sysroot/include] ==> [/home/openharmony/toolchain/riscv/sysroot/include]
+  implicit include dirs: [/home/openharmony/toolchain/riscv/sysroot/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(riscv64-unknown-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_f10da/fast && /usr/bin/make -f CMakeFiles/cmTC_f10da.dir/build.make CMakeFiles/cmTC_f10da.dir/build]
+  ignore line: [make[1]: Entering directory '/home/openharmony/SummerTTS/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++ --sysroot=/home/openharmony/toolchain/riscv/sysroot    --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include    -v -o CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_f10da.dir/']
+  ignore line: [ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/cc1plus -quiet -nostdinc -v -iprefix /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/ -isysroot /home/openharmony/toolchain/riscv/sysroot -D_GNU_SOURCE -isystem /home/openharmony/toolchain/riscv/sysroot/include /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f10da.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=rocket -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -march=rv64imafdc_zicsr_zifencei -version -o /tmp/ccoxIYmV.s]
+  ignore line: [GNU C++17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/openharmony/toolchain/riscv/sysroot/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 12.2.0 (riscv64-unknown-linux-musl)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version none]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c0977378f48b9c93c4ef3690ab0f3c9c]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_f10da.dir/']
+  ignore line: [ /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/as -v --traditional-format -march=rv64imafdc_zicsr_zifencei -march=rv64imafdc_zicsr_zifencei -mabi=lp64d -misa-spec=20191213 -o CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccoxIYmV.s]
+  ignore line: [GNU assembler version 2.40.0 (riscv64-unknown-linux-musl) using BFD version (GNU Binutils) 2.40.0.20230214]
+  ignore line: [COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '-v' '-o' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_f10da]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f10da.dir/link.txt --verbose=1]
+  ignore line: [/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++ --sysroot=/home/openharmony/toolchain/riscv/sysroot  --sysroot=/home/openharmony/toolchain/riscv/sysroot -nostdinc -isystem /home/openharmony/toolchain/riscv/sysroot/include   --sysroot=/home/openharmony/toolchain/riscv/sysroot -v CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f10da   -L/home/openharmony/toolchain/riscv/sysroot/usr/lib  -L/home/openharmony/toolchain/riscv/sysroot/lib ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/openharmony/toolchain/riscv/bin/riscv64-unknown-linux-musl-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper]
+  ignore line: [Target: riscv64-unknown-linux-musl]
+  ignore line: [Configured with: /home/runner/work/riscv-gnu-toolchain/riscv-gnu-toolchain/gcc/configure --target=riscv64-unknown-linux-musl --prefix=/opt/riscv --with-sysroot=/opt/riscv/sysroot --with-system-zlib --enable-shared --enable-tls --enable-languages=c c++ --disable-libmudflap --disable-libssp --disable-libquadmath --disable-libsanitizer --disable-nls --disable-bootstrap --src=.././gcc --disable-multilib --with-abi=lp64d --with-arch=rv64gc --with-tune=rocket --with-isa-spec=20191213 'CFLAGS_FOR_TARGET=-O2    -mcmodel=medlow' 'CXXFLAGS_FOR_TARGET=-O2    -mcmodel=medlow']
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 12.2.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../libexec/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/bin/]
+  ignore line: [LIBRARY_PATH=/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/:/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib/:/home/openharmony/toolchain/riscv/sysroot/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/openharmony/toolchain/riscv/sysroot' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-nostdinc' '-isystem' '/home/openharmony/toolchain/riscv/sysroot/include' '--sysroot=/home/openharmony/toolchain/riscv/sysroot' '-v' '-o' 'cmTC_f10da' '-L/home/openharmony/toolchain/riscv/sysroot/usr/lib' '-L/home/openharmony/toolchain/riscv/sysroot/lib' '-shared-libgcc' '-mtune=rocket' '-march=rv64imafdc_zicsr_zifencei' '-mabi=lp64d' '-misa-spec=20191213' '-march=rv64imafdc_zicsr_zifencei' '-dumpdir' 'cmTC_f10da.']
+  link line: [ /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/collect2 -plugin /home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/liblto_plugin.so -plugin-opt=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccouwNtk.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/openharmony/toolchain/riscv/sysroot --eh-frame-hdr -melf64lriscv -dynamic-linker /lib/ld-musl-riscv64.so.1 -o cmTC_f10da /home/openharmony/toolchain/riscv/sysroot/lib/crt1.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crti.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtbegin.o -L/home/openharmony/toolchain/riscv/sysroot/usr/lib -L/home/openharmony/toolchain/riscv/sysroot/lib -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0 -L/home/openharmony/toolchain/riscv/bin/../lib/gcc -L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib -L/home/openharmony/toolchain/riscv/sysroot/lib CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtend.o /home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtn.o]
+    arg [/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/openharmony/toolchain/riscv/bin/../libexec/gcc/riscv64-unknown-linux-musl/12.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccouwNtk.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/openharmony/toolchain/riscv/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-melf64lriscv] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-musl-riscv64.so.1] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_f10da] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/sysroot/lib/crt1.o] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crti.o] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtbegin.o] ==> ignore
+    arg [-L/home/openharmony/toolchain/riscv/sysroot/usr/lib] ==> dir [/home/openharmony/toolchain/riscv/sysroot/usr/lib]
+    arg [-L/home/openharmony/toolchain/riscv/sysroot/lib] ==> dir [/home/openharmony/toolchain/riscv/sysroot/lib]
+    arg [-L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0] ==> dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0]
+    arg [-L/home/openharmony/toolchain/riscv/bin/../lib/gcc] ==> dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc]
+    arg [-L/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib]
+    arg [-L/home/openharmony/toolchain/riscv/sysroot/lib] ==> dir [/home/openharmony/toolchain/riscv/sysroot/lib]
+    arg [CMakeFiles/cmTC_f10da.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtend.o] ==> ignore
+    arg [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/crtn.o] ==> ignore
+  collapse library dir [/home/openharmony/toolchain/riscv/sysroot/usr/lib] ==> [/home/openharmony/toolchain/riscv/sysroot/usr/lib]
+  collapse library dir [/home/openharmony/toolchain/riscv/sysroot/lib] ==> [/home/openharmony/toolchain/riscv/sysroot/lib]
+  collapse library dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0] ==> [/home/openharmony/toolchain/riscv/lib/gcc/riscv64-unknown-linux-musl/12.2.0]
+  collapse library dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc] ==> [/home/openharmony/toolchain/riscv/lib/gcc]
+  collapse library dir [/home/openharmony/toolchain/riscv/bin/../lib/gcc/riscv64-unknown-linux-musl/12.2.0/../../../../riscv64-unknown-linux-musl/lib] ==> [/home/openharmony/toolchain/riscv/riscv64-unknown-linux-musl/lib]
+  collapse library dir [/home/openharmony/toolchain/riscv/sysroot/lib] ==> [/home/openharmony/toolchain/riscv/sysroot/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/openharmony/toolchain/riscv/sysroot/usr/lib;/home/openharmony/toolchain/riscv/sysroot/lib;/home/openharmony/toolchain/riscv/lib/gcc/riscv64-unknown-linux-musl/12.2.0;/home/openharmony/toolchain/riscv/lib/gcc;/home/openharmony/toolchain/riscv/riscv64-unknown-linux-musl/lib]
+  implicit fwks: []
+
+

@@ -1,0 +1,4 @@
+/home/openharmony/SummerTTS/build/CMakeFiles/rebuild_cache.dir
+/home/openharmony/SummerTTS/build/CMakeFiles/edit_cache.dir
+/home/openharmony/SummerTTS/build/CMakeFiles/tts_test.dir
+/home/openharmony/SummerTTS/build/CMakeFiles/tts_test_shared_lib.dir
