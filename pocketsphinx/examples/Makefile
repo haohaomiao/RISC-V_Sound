@@ -48,13 +48,35 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/openharmony/pocketsphinx/examples
+CMAKE_SOURCE_DIR = /home/openharmony/pocketsphinx
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/openharmony/pocketsphinx/examples
+CMAKE_BINARY_DIR = /home/openharmony/pocketsphinx
 
 #=============================================================================
 # Targets provided globally by CMake.
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,16 +100,51 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/openharmony/pocketsphinx/examples/CMakeFiles /home/openharmony/pocketsphinx/examples/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/openharmony/pocketsphinx/examples/CMakeFiles 0
+	cd /home/openharmony/pocketsphinx && $(CMAKE_COMMAND) -E cmake_progress_start /home/openharmony/pocketsphinx/CMakeFiles /home/openharmony/pocketsphinx/examples/CMakeFiles/progress.marks
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/openharmony/pocketsphinx/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,87 +154,159 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/openharmony/pocketsphinx && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named examples
+# Convenience name for target.
+examples/CMakeFiles/examples.dir/rule:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/examples.dir/rule
+.PHONY : examples/CMakeFiles/examples.dir/rule
 
-# Build rule for target.
-examples: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 examples
+# Convenience name for target.
+examples: examples/CMakeFiles/examples.dir/rule
+
 .PHONY : examples
 
 # fast build rule for target.
 examples/fast:
-	$(MAKE) -f CMakeFiles/examples.dir/build.make CMakeFiles/examples.dir/build
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/build
 .PHONY : examples/fast
 
-#=============================================================================
-# Target rules for targets named simple
+# Convenience name for target.
+examples/CMakeFiles/stt_test.dir/rule:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/stt_test.dir/rule
+.PHONY : examples/CMakeFiles/stt_test.dir/rule
 
-# Build rule for target.
-simple: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple
+# Convenience name for target.
+stt_test: examples/CMakeFiles/stt_test.dir/rule
+
+.PHONY : stt_test
+
+# fast build rule for target.
+stt_test/fast:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/stt_test.dir/build.make examples/CMakeFiles/stt_test.dir/build
+.PHONY : stt_test/fast
+
+# Convenience name for target.
+examples/CMakeFiles/simple.dir/rule:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/simple.dir/rule
+.PHONY : examples/CMakeFiles/simple.dir/rule
+
+# Convenience name for target.
+simple: examples/CMakeFiles/simple.dir/rule
+
 .PHONY : simple
 
 # fast build rule for target.
 simple/fast:
-	$(MAKE) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/build
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/simple.dir/build.make examples/CMakeFiles/simple.dir/build
 .PHONY : simple/fast
 
-#=============================================================================
-# Target rules for targets named live
+# Convenience name for target.
+examples/CMakeFiles/live.dir/rule:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/live.dir/rule
+.PHONY : examples/CMakeFiles/live.dir/rule
 
-# Build rule for target.
-live: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 live
+# Convenience name for target.
+live: examples/CMakeFiles/live.dir/rule
+
 .PHONY : live
 
 # fast build rule for target.
 live/fast:
-	$(MAKE) -f CMakeFiles/live.dir/build.make CMakeFiles/live.dir/build
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/live.dir/build.make examples/CMakeFiles/live.dir/build
 .PHONY : live/fast
 
-# target to build an object file
-live.o:
-	$(MAKE) -f CMakeFiles/live.dir/build.make CMakeFiles/live.dir/live.o
+live.o: live.c.o
+
 .PHONY : live.o
 
-# target to preprocess a source file
-live.i:
-	$(MAKE) -f CMakeFiles/live.dir/build.make CMakeFiles/live.dir/live.i
+# target to build an object file
+live.c.o:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/live.dir/build.make examples/CMakeFiles/live.dir/live.c.o
+.PHONY : live.c.o
+
+live.i: live.c.i
+
 .PHONY : live.i
 
-# target to generate assembly for a file
-live.s:
-	$(MAKE) -f CMakeFiles/live.dir/build.make CMakeFiles/live.dir/live.s
+# target to preprocess a source file
+live.c.i:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/live.dir/build.make examples/CMakeFiles/live.dir/live.c.i
+.PHONY : live.c.i
+
+live.s: live.c.s
+
 .PHONY : live.s
 
-# target to build an object file
-simple.o:
-	$(MAKE) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/simple.o
+# target to generate assembly for a file
+live.c.s:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/live.dir/build.make examples/CMakeFiles/live.dir/live.c.s
+.PHONY : live.c.s
+
+simple.o: simple.c.o
+
 .PHONY : simple.o
 
-# target to preprocess a source file
-simple.i:
-	$(MAKE) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/simple.i
+# target to build an object file
+simple.c.o:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/simple.dir/build.make examples/CMakeFiles/simple.dir/simple.c.o
+.PHONY : simple.c.o
+
+simple.i: simple.c.i
+
 .PHONY : simple.i
 
-# target to generate assembly for a file
-simple.s:
-	$(MAKE) -f CMakeFiles/simple.dir/build.make CMakeFiles/simple.dir/simple.s
+# target to preprocess a source file
+simple.c.i:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/simple.dir/build.make examples/CMakeFiles/simple.dir/simple.c.i
+.PHONY : simple.c.i
+
+simple.s: simple.c.s
+
 .PHONY : simple.s
+
+# target to generate assembly for a file
+simple.c.s:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/simple.dir/build.make examples/CMakeFiles/simple.dir/simple.c.s
+.PHONY : simple.c.s
+
+stt_test.o: stt_test.c.o
+
+.PHONY : stt_test.o
+
+# target to build an object file
+stt_test.c.o:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/stt_test.dir/build.make examples/CMakeFiles/stt_test.dir/stt_test.c.o
+.PHONY : stt_test.c.o
+
+stt_test.i: stt_test.c.i
+
+.PHONY : stt_test.i
+
+# target to preprocess a source file
+stt_test.c.i:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/stt_test.dir/build.make examples/CMakeFiles/stt_test.dir/stt_test.c.i
+.PHONY : stt_test.c.i
+
+stt_test.s: stt_test.c.s
+
+.PHONY : stt_test.s
+
+# target to generate assembly for a file
+stt_test.c.s:
+	cd /home/openharmony/pocketsphinx && $(MAKE) -f examples/CMakeFiles/stt_test.dir/build.make examples/CMakeFiles/stt_test.dir/stt_test.c.s
+.PHONY : stt_test.c.s
 
 # Help Target
 help:
@@ -185,9 +314,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... install/local"
 	@echo "... examples"
+	@echo "... install/strip"
+	@echo "... stt_test"
 	@echo "... simple"
 	@echo "... live"
 	@echo "... live.o"
@@ -196,6 +331,9 @@ help:
 	@echo "... simple.o"
 	@echo "... simple.i"
 	@echo "... simple.s"
+	@echo "... stt_test.o"
+	@echo "... stt_test.i"
+	@echo "... stt_test.s"
 .PHONY : help
 
 
@@ -207,6 +345,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/openharmony/pocketsphinx && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,16 +1,17 @@
 set(EXAMPLES
   live
   simple
+  stt_test
   )
 
 foreach(EXAMPLE ${EXAMPLES})
   add_executable(${EXAMPLE} EXCLUDE_FROM_ALL ${EXAMPLE}.c)
+  # add_library(lib${EXAMPLE} SHARED ${EXAMPLE}.c)
   target_link_libraries(${EXAMPLE} pocketsphinx)
   target_include_directories(
     ${EXAMPLE} PRIVATE ${CMAKE_BINARY_DIR}
     )
 endforeach()
-
 add_custom_target(examples DEPENDS ${EXAMPLES})
 
 # Try to find portaudio and pulseaudio with pkg-config
